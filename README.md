@@ -9,4 +9,4 @@ Una introducción a Git y GitHub puede encontrarse en el arículo :
 
 En GitHub Desktop clona el siguiente repositorio:
 
-[https://github.com/GruposTEC/FJTC1033-301.git](https://github.com/GruposTEC/FJTC1033-301.git)
+[https://github.com/GruposTEC/FJ23TC1033-301.git](https://github.com/GruposTEC/FJ23TC1033-301.git)
