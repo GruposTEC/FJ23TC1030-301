@@ -13,6 +13,12 @@ class Base{
         ~Base(){
             cout<<"el destructor de base"<<endl;
         }
+        void imprimir(){
+            cout<<"Sin parametros en base"<<endl;
+        }
+        void imprimir(int k){
+            cout<<"Con parametros en base"<<endl;
+        }
     protected:
         int z;
 };
@@ -26,13 +32,14 @@ class Derivada:public Base{
     ~Derivada(){
         cout<<"el destructor de derivada"<<endl;
     }
-    void imprimir(){
+    void imprimir(int z){
+        Base::imprimir(z);
         cout<<"La variable pública es:"<<y<<endl;
         cout<<"La variable protegida que herede es:"<<z<<endl;
     }
 };
 int main(){
     Derivada obj(5,10);
-    obj.imprimir();
+    obj.imprimir(5);
 
 }
