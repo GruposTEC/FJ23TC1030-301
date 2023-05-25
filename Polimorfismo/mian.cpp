@@ -74,8 +74,11 @@ int main(){
     apeave2 = &a;
     parvada.push_back(apeave2);
     for(int i=0; i < parvada.size(); i++){
-
-        parvada[i] -> volar();
-        parvada[i] -> nadar();
+        Pinguino *ap2 = dynamic_cast <Pinguino *> (parvada[i]);
+        if (ap2!=0)
+        {
+            ap2 -> volar();
+            ap2 -> nadar();
+        }
     }
 }
