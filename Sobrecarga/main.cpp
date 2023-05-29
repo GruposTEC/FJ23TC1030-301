@@ -9,5 +9,7 @@ int main(){
     Numero num2(10);
     Numero num3=num1-num2;
     num3.imprimir();
-
+    ++num3;
+    num3.imprimir();
+    cout<<num3;
 }

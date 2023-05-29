@@ -13,3 +13,10 @@ Numero Numero::operator-(Numero n){
 void Numero::imprimir(){
     cout<<"El valor de x es: "<<x<<endl;
 }
+void Numero::operator++(){
+    x=x+1;
+}
+ostream &operator<<(ostream &COUT,Numero n){
+    COUT<<"Desde la sobrecarga el valor de x es: "<<n.x<<endl;
+    return COUT;
+}
