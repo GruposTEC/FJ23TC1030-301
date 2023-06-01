@@ -7,6 +7,12 @@ using std::string;
 using std::cout;
 using std::endl;
 using std::ostream;
+Familia::~Familia()
+{
+ for (int i = 0; i < fam.size(); i++){
+    delete fam[i];
+ }
+}
 
 void Familia::agregarMiembro(){
     Hijo *h=new Hijo("Mario");

@@ -16,6 +16,7 @@ class Familia{
     private:
         vector<Padre*>fam;
     public:
+        ~Familia();
         void agregarMiembro();
         void imprimir();
         friend ostream & operator<<(ostream &COUT,Familia &f);

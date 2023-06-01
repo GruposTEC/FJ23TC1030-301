@@ -13,7 +13,7 @@ Padre::Padre(){
 
 }
 Padre::~Padre(){
-    //cout<<"En el destructor de padre"<<endl;
+    cout<<"En el destructor de padre"<<endl;
 }
 ostream & operator<<(ostream &COUT,Padre &p){
     COUT<<"Soy Padre y mi nombre es: "<<p.nombre<<endl;

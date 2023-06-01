@@ -13,7 +13,7 @@ class Padre{
     public:
         Padre(string nom);
         Padre();
-        ~Padre();
+        virtual ~Padre();
         virtual void imprimir();
         friend ostream & operator<<(ostream &COUT,Padre &p);
 

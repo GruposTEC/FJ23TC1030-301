@@ -10,7 +10,7 @@ Hija::Hija(string nom){
     nombre=nom;
 }
 Hija::~Hija(){
-    //cout<<"En el destructor de hija"<<endl;
+    cout<<"En el destructor de hija"<<endl;
 }
 ostream & operator<<(ostream &COUT,Hija &ha){
     COUT<<"Soy Hija y mi nombre es: "<<ha.nombre<<endl;
